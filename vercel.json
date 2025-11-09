@@ -1,0 +1,22 @@
+{
+  "buildCommand": "cd client && npm run build",
+  "outputDirectory": "client/dist",
+  "devCommand": "cd client && npm run dev",
+  "installCommand": "npm install",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "functions": {
+    "server/index.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "env": {
+    "VITE_SUPABASE_URL": "https://jkfadndrnseuqnwacobr.supabase.co",
+    "VITE_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImprZmFkbmRybnNldXFud2Fjb2JyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA1MTY4MDksImV4cCI6MjA3NjA5MjgwOX0.47ArO9I7L4JeSzTJ4x1riAIMJmqS5qaU6ALGoErIhe4"
+  }
+}
