@@ -2,13 +2,12 @@ import DashboardLayout from "@/components/DashboardLayout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
 import { trpc } from "@/lib/trpc";
 import { useRoute, Link } from "wouter";
-import { 
-  ArrowLeft, 
-  Download, 
-  Mail, 
+import {
+  ArrowLeft,
+  Download,
+  Mail,
   MessageCircle,
   CheckCircle,
   XCircle,
@@ -16,7 +15,6 @@ import {
   TrendingUp,
   PiggyBank
 } from "lucide-react";
-import { motion } from "framer-motion";
 import CircularGauge from "@/components/CircularGauge";
 
 export default function ContractDetail() {
@@ -51,20 +49,6 @@ export default function ContractDetail() {
       </DashboardLayout>
     );
   }
-
-  const getScoreColor = (score: number | null) => {
-    if (!score) return "text-gray-600";
-    if (score >= 75) return "text-green-600";
-    if (score >= 50) return "text-orange-600";
-    return "text-red-600";
-  };
-
-  const getScoreBgColor = (score: number | null) => {
-    if (!score) return "bg-gray-100";
-    if (score >= 75) return "bg-green-100";
-    if (score >= 50) return "bg-orange-100";
-    return "bg-red-100";
-  };
 
   return (
     <DashboardLayout>

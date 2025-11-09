@@ -91,13 +91,6 @@ export default function Contracts() {
     return "text-red-600";
   };
 
-  const getScoreBgColor = (score: number | null) => {
-    if (!score) return "bg-gray-100";
-    if (score >= 75) return "bg-green-100";
-    if (score >= 50) return "bg-orange-100";
-    return "bg-red-100";
-  };
-
   const getStatusBadge = (status: string | null) => {
     switch (status) {
       case "actif":

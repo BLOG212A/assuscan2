@@ -36,7 +36,6 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
   const { user, logout, loading } = useAuth();
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { data: authData } = trpc.auth.me.useQuery();
   const { data: profile } = trpc.profile.get.useQuery();
 
   const navItems = [

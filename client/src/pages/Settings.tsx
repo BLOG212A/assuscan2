@@ -7,10 +7,9 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { trpc } from "@/lib/trpc";
 import { useState } from "react";
-import { 
-  User, 
-  Mail, 
-  Crown, 
+import {
+  User,
+  Crown,
   Shield,
   Bell,
   Trash2,
