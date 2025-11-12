@@ -170,8 +170,6 @@ export async function getUserContracts(userId: string, filters?: { type?: string
   const db = await getDb();
   if (!db) return [];
 
-  let query = db.select().from(contracts).where(eq(contracts.userId, userId));
-
   // Apply filters if provided
   const conditions = [eq(contracts.userId, userId)];
   if (filters?.type) {

@@ -158,18 +158,6 @@ export default function Dashboard() {
     }
   };
 
-  const getScoreColor = (score: number) => {
-    if (score >= 75) return "text-green-600";
-    if (score >= 50) return "text-orange-600";
-    return "text-red-600";
-  };
-
-  const getScoreBgColor = (score: number) => {
-    if (score >= 75) return "bg-green-100";
-    if (score >= 50) return "bg-orange-100";
-    return "bg-red-100";
-  };
-
   return (
     <DashboardLayout>
       <div className="max-w-6xl mx-auto">

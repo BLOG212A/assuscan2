@@ -2,21 +2,19 @@ import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { APP_LOGO, APP_TITLE, getLoginUrl } from "@/const";
 import { motion } from "framer-motion";
-import { 
-  FileSearch, 
-  TrendingUp, 
-  MessageCircle, 
-  Car, 
-  Home as HomeIcon, 
-  Heart, 
+import {
+  FileSearch,
+  TrendingUp,
+  MessageCircle,
+  Car,
+  Home as HomeIcon,
+  Heart,
   Briefcase,
   Star,
   ChevronRight,
   Sparkles
 } from "lucide-react";
-import { Link } from "wouter";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
